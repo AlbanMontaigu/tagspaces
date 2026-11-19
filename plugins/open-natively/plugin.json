@@ -1,0 +1,18 @@
+{
+  "$comment": "Inputs for build.js. fileTypes only makes the plugin selectable for these extensions; you choose which ones use it in TagSpaces > Settings > File Types.",
+  "displayName": "Open Natively",
+  "packageName": "@local/open-natively",
+  "version": "1.1.0",
+  "fileTypes": [
+    "doc", "docx", "docm", "dot", "dotx", "odt", "rtf",
+    "xls", "xlsx", "xlsm", "xlsb", "xltx", "ods", "csv",
+    "ppt", "pptx", "pptm", "ppsx", "potx", "odp",
+    "vsd", "vsdx", "mpp", "one", "pub",
+    "msg", "eml", "ics", "vcf",
+    "pdf", "epub", "xps",
+    "zip", "7z", "rar", "tar", "gz", "tgz",
+    "drawio", "dwg", "psd", "ai", "fig", "sketch", "xcf",
+    "mp4", "mkv", "avi", "mov", "wmv", "mp3", "wav", "flac",
+    "html", "htm", "svg", "json", "xml", "yaml", "yml", "log", "txt", "md"
+  ]
+}

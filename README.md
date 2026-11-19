@@ -51,6 +51,7 @@ dist/ cache/ backups/  generated, git-ignored
 ## Plugins
 
 - [md-editor-mermaid](plugins/md-editor-mermaid/README.md): stock Markdown editor + Mermaid diagrams.
+- [open-natively](plugins/open-natively/README.md): a placeholder viewer showing the file name, folder and a "Copy path" button, for types you open with TagSpaces' own *Open File Natively* (`npm run open-natively`).
 
 ## Notes
 

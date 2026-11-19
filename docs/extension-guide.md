@@ -66,6 +66,8 @@ The host also calls `window.setTheme(mode)` directly when the app theme changes,
 
 `templates/viewer/src/build/tagspaces-bridge.js` wraps all of this as `window.TS`.
 
+**No "open natively" from an extension.** The iframe is sandboxed (`allow-same-origin allow-scripts allow-modals allow-downloads`). Its origin is `null`, so it can't touch `window.parent.electronIO`. `openLinkExternally` with `file://` reaches the main process's `openUrl`, and that only allows `http: https: mailto: tel:`. With no `allow-popups`, `window.open` is blocked too. Point users to the host's own *Open File Natively* (`Ctrl+Enter`) instead.
+
 ## Debugging
 
 - Close TagSpaces and run `npm run test -- <name> <sample>`. It starts a portable instance with a temp profile and `--remote-debugging-port=9333`. While it runs you can open `http://127.0.0.1:9333/json`. The extension shows up as its own `iframe` target.

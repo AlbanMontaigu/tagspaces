@@ -14,6 +14,7 @@
     "undeploy": "node tools/undeploy.js",
     "package": "node tools/package.js",
     "test": "node tools/test.js",
-    "mermaid": "node tools/build.js md-editor-mermaid && node tools/deploy.js md-editor-mermaid"
+    "mermaid": "node tools/build.js md-editor-mermaid && node tools/deploy.js md-editor-mermaid",
+    "open-natively": "node tools/build.js open-natively && node tools/deploy.js open-natively"
   }
 }

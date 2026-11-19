@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Open Natively</title>
+    <!-- tsfile: is required: user plugins are served from %APPDATA%\TagSpaces\tsplugins via tsfile:// -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' tsfile:; script-src 'self' tsfile:; style-src 'self' tsfile: 'unsafe-inline'; connect-src 'none'; font-src 'self' tsfile: data:; img-src 'self' data: tsfile:;"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main id="card">
+      <div id="icon" aria-hidden="true"></div>
+      <h1 id="name">…</h1>
+      <p id="folder"></p>
+      <div id="actions">
+        <button id="copy" class="primary">Copy path</button>
+      </div>
+      <p id="status" role="status"></p>
+    </main>
+    <script src="./tagspaces-bridge.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
