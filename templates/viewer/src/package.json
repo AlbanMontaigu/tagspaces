@@ -1,0 +1,14 @@
+{
+  "name": "@local/template",
+  "version": "1.0.0",
+  "description": "template",
+  "license": "MIT",
+  "tsextension": {
+    "name": "Template",
+    "types": ["viewer"],
+    "color": "#7e57c2",
+    "fileTypes": [{ "ext": "txt" }],
+    "buildFolder": "build",
+    "enabled": true
+  }
+}

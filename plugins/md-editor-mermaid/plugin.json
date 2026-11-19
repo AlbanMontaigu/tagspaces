@@ -1,0 +1,8 @@
+{
+  "$comment": "Inputs for build.js. Bump these to upgrade; build fails loudly if the upstream bundle no longer matches the patch.",
+  "upstream": "@tagspaces/extensions@1.0.259",
+  "upstreamFolder": "md-editor",
+  "mermaid": "mermaid@11.4.1",
+  "displayName": "MD Editor (crepe + Mermaid)",
+  "packageName": "@tagspaces/md-editor-mermaid"
+}

@@ -1,0 +1,3 @@
+Sample file for the template viewer.
+Replace this with a real example of your file type and run:
+  npm run test -- <plugin> plugins/<plugin>/sample.<ext>

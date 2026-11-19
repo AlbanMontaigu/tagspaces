@@ -1,0 +1,19 @@
+{
+  "name": "tagspaces-local-plugins",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Build, test and deploy local TagSpaces extensions (no dependencies; Node >= 22 + Windows tar).",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "status": "node tools/status.js",
+    "new": "node tools/new.js",
+    "build": "node tools/build.js",
+    "deploy": "node tools/deploy.js",
+    "undeploy": "node tools/undeploy.js",
+    "package": "node tools/package.js",
+    "test": "node tools/test.js",
+    "mermaid": "node tools/build.js md-editor-mermaid && node tools/deploy.js md-editor-mermaid"
+  }
+}

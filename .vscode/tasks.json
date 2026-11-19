@@ -1,0 +1,18 @@
+{
+  "version": "2.0.0",
+  "inputs": [
+    {
+      "id": "plugin",
+      "type": "promptString",
+      "description": "Plugin name (folder under plugins/)",
+      "default": "md-editor-mermaid"
+    }
+  ],
+  "tasks": [
+    { "label": "TagSpaces: status", "type": "shell", "command": "npm run status", "problemMatcher": [] },
+    { "label": "TagSpaces: build", "type": "shell", "command": "npm run build -- ${input:plugin}", "problemMatcher": [], "group": "build" },
+    { "label": "TagSpaces: build + deploy", "type": "shell", "command": "npm run build -- ${input:plugin}; if ($?) { npm run deploy -- ${input:plugin} }", "problemMatcher": [], "group": { "kind": "build", "isDefault": true } },
+    { "label": "TagSpaces: package zip", "type": "shell", "command": "npm run package -- ${input:plugin}", "problemMatcher": [] },
+    { "label": "TagSpaces: smoke test (close TagSpaces first)", "type": "shell", "command": "npm run test -- md-editor-mermaid plugins/md-editor-mermaid/sample.md --expect '.preview svg'", "problemMatcher": [] }
+  ]
+}

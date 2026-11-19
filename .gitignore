@@ -1,0 +1,6 @@
+# Build output and downloads are reproducible from plugins/ + tools/
+dist/
+cache/
+backups/
+node_modules/
+*.log

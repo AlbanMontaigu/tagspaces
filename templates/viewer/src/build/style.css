@@ -1,0 +1,69 @@
+:root {
+  --bg: #ffffff;
+  --fg: #1f2328;
+  --muted: #6e7781;
+  --border: #d0d7de;
+  --accent: #7e57c2;
+}
+:root[data-theme='dark'] {
+  --bg: #1e1e1e;
+  --fg: #e6edf3;
+  --muted: #8b949e;
+  --border: #30363d;
+  --accent: #b39ddb;
+}
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--fg);
+  font: 14px/1.5 system-ui, 'Segoe UI', sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+#toolbar {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 6px 12px;
+  border-bottom: 1px solid var(--border);
+}
+#title {
+  font-weight: 600;
+}
+#meta {
+  color: var(--muted);
+  flex: 1;
+}
+#save {
+  background: var(--accent);
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  padding: 4px 12px;
+  cursor: pointer;
+}
+#app {
+  flex: 1;
+  overflow: auto;
+  padding: 12px;
+}
+pre {
+  margin: 0;
+  white-space: pre-wrap;
+  font: 13px/1.5 Consolas, 'Cascadia Mono', monospace;
+}
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--fg);
+  font: 13px/1.5 Consolas, 'Cascadia Mono', monospace;
+  padding: 8px;
+}
