@@ -4,3 +4,6 @@ cache/
 backups/
 node_modules/
 *.log
+
+# Local tool state folder
+.tf/
