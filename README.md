@@ -53,6 +53,10 @@ dist/ cache/ backups/  generated, git-ignored
 - [md-editor-mermaid](plugins/md-editor-mermaid/README.md): stock Markdown editor + Mermaid diagrams.
 - [open-natively](plugins/open-natively/README.md): a placeholder viewer showing the file name, folder and a "Copy path" button, for types you open with TagSpaces' own *Open File Natively* (`npm run open-natively`).
 
+## Other tools
+
+- [tools/ts-folders](tools/ts-folders/README.md): Python script that finds every TagSpaces `.ts` meta folder below a folder, reports sidecars, thumbnails, revisions and orphans, and with `--delete` moves them all to the Recycle Bin.
+
 ## Notes
 
 - See [docs/deploy-and-activate.md](docs/deploy-and-activate.md) for the full user procedure, and [docs/extension-guide.md](docs/extension-guide.md) for the extension format, the host↔iframe message protocol and how TagSpaces discovers plugins.
